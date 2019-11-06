@@ -1,5 +1,5 @@
 {
-  "name": "@skhalife/AmEx-Maintainers-Day",
+  "name": "@skhalife/amex-maintainers-day",
   "version": "1.0.47",
   "description": "Functions for working with the Fibonacci sequence",
   "main": "index.js",
