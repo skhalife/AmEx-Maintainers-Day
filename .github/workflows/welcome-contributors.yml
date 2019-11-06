@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [issues, pull_request]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: 'Hi there! Welcome to the Octodemov2 organization!  I see that this is your first issue, here are some things you might find helpful....'
+          pr-message: 'Message that will be displayed on users'' first pr!'
