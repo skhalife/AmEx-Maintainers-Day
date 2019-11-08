@@ -25,17 +25,19 @@ jobs:
       env:
         CI: true
 
-  publish-gpr:
-    name: Publish to GPR!
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          version: 12
-          registry-url: https://npm.pkg.github.com/
-          scope: '@skhalife'
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+## COMMENTED OUT. Checkout "nodejs-publish-pkg.yml for a better example"
+  # publish-gpr:
+  #   name: Publish to GPR!
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v1
+  #     - uses: actions/setup-node@v1
+  #       with:
+  #         version: 12
+  #         registry-url: https://npm.pkg.github.com/
+  #         scope: '@skhalife'
+  #     - run: npm publish
+  #       env:
+  #         NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

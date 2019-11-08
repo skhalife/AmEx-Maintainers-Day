@@ -1,6 +1,6 @@
 {
   "name": "@skhalife/amex-maintainers-day",
-  "version": "1.0.47",
+  "version": "1.0.50",
   "description": "Functions for working with the Fibonacci sequence",
   "main": "index.js",
   "scripts": {
